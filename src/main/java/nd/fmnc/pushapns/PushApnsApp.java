@@ -23,7 +23,7 @@ import java.io.File;
 
 @SpringBootApplication
 @EnableScheduling
-@PropertySource("file:fmnc-pushapns.properties")
+@PropertySource("file:${user.home}/fmnc-pushapns.properties")
 public class PushApnsApp implements CommandLineRunner {
 
 	private Logger logger = LoggerFactory.getLogger(this.getClass());
